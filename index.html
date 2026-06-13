@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umami Kitchen — Easy Asian Recipes</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Umami Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Cooking Tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container fade-in">
+      <h1>Simple Asian Recipes for Every Home Cook</h1>
+      <p>Fresh ingredients, bold flavors, easy steps. No experience needed.</p>
+      <a href="#recipes" class="btn btn-warning btn-lg">Browse Recipes</a>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section id="carousel-section">
+    <div class="container">
+      <h2>A Taste of Asia</h2>
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner rounded">
+          <!-- Slide 1 : Ramen -->
+          <div class="carousel-item active">
+            <img src="https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F5b9ee099940fb3aea0329f7be7ae29fbad54bb43-1500x1000.jpg&w=2048&q=75" class="d-block w-100" alt="Ramen bowl" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h3>Japanese Ramen</h3>
+              <p>Rich soy broth, soft-boiled egg, nori and bamboo shoots.</p>
+            </div>
+          </div>
+          <!-- Slide 2 : Pad Thai -->
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=1200&h=400&fit=crop" class="d-block w-100" alt="Pad Thai" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h3>Thai Pad Thai</h3>
+              <p>Stir-fried rice noodles with shrimp, egg and tamarind sauce.</p>
+            </div>
+          </div>
+          <!-- Slide 3 : Dumplings -->
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=1200&h=400&fit=crop" class="d-block w-100" alt="Chinese dumplings" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h3>Chinese Potstickers</h3>
+              <p>Pan-fried dumplings with a crispy bottom and juicy pork filling.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Umami Kitchen</h2>
+      <p>
+        Umami Kitchen is a recipe website focused on everyday Asian dishes — the kind of food millions of people cook at home across Japan, Thailand, China, Korea, and Vietnam.
+        Every recipe has been tested in a regular kitchen, using ingredients you can find at any supermarket.
+      </p>
+      <p>
+        Whether you're cooking ramen for the first time or trying to nail a proper Pad Thai, we keep things clear and honest:
+        real quantities, realistic timings, and no unnecessary steps.
+      </p>
+      <a href="tips.html" class="btn btn-outline-secondary mt-1">Our Cooking Tips →</a>
+    </div>
+  </section>
+
+  <!-- Grid / Recipes Section -->
+  <section id="recipes">
+    <div class="container">
+      <h2>Featured Recipes</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 — Ramen -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F5b9ee099940fb3aea0329f7be7ae29fbad54bb43-1500x1000.jpg&w=2048&q=75" class="card-img-top" alt="Ramen" />
+            <div class="card-body">
+              <h3 class="card-title">Shoyu Ramen</h3>
+              <p class="card-text">Japanese ramen in a soy-based chicken broth, topped with a soft-boiled egg, nori, and bamboo shoots. Ready in 50 minutes.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#ramenModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 — Pad Thai -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=200&fit=crop" class="card-img-top" alt="Pad Thai" />
+            <div class="card-body">
+              <h3 class="card-title">Pad Thai</h3>
+              <p class="card-text">Thai stir-fried rice noodles with shrimp, egg, tofu, and a tangy tamarind sauce. Topped with crushed peanuts and lime.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#padthaiModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 — Dumplings -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&h=200&fit=crop" class="card-img-top" alt="Dumplings" />
+            <div class="card-body">
+              <h3 class="card-title">Pan-Fried Dumplings</h3>
+              <p class="card-text">Chinese potstickers with a ground pork and ginger filling, crispy on the bottom, steamed on top. Served with a soy dipping sauce.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#dumplingModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 — Miso Soup -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://chefjacooks.com/wp-content/uploads/2022/11/tofu-miso-soup-1.jpg" class="card-img-top" alt="Miso Soup" />
+            <div class="card-body">
+              <h3 class="card-title">Miso Soup</h3>
+              <p class="card-text">A classic Japanese starter made with white miso paste, silken tofu, wakame seaweed and spring onion in a dashi broth. Done in 10 minutes.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#misoModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 — Bulgogi -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://hereasyrecipes.com/wp-content/uploads/2025/09/Beef_Bulgogi_with_Rice_y3jjo8.webp" class="card-img-top" alt="Bulgogi" />
+            <div class="card-body">
+              <h3 class="card-title">Korean Bulgogi</h3>
+              <p class="card-text">Thinly sliced beef marinated in soy sauce, sesame oil, garlic and grated pear, then cooked over high heat and served over steamed rice.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#bulgogiModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 — Pho -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=600&h=200&fit=crop" class="card-img-top" alt="Pho" />
+            <div class="card-body">
+              <h3 class="card-title">Beef Phở</h3>
+              <p class="card-text">Vietnamese rice noodle soup with a star anise and cinnamon-spiced beef broth, thin slices of beef, fresh herbs and bean sprouts.</p>
+              <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#phoModal">View Recipe</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal — Ramen -->
+  <div class="modal fade" id="ramenModal" tabindex="-1" aria-labelledby="ramenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="ramenLabel">Shoyu Ramen</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 10 min &nbsp;|&nbsp; <strong>Cook:</strong> 40 min &nbsp;|&nbsp; <strong>Serves:</strong> 2</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>2 portions fresh or dried ramen noodles</li>
+            <li>900 ml chicken stock</li>
+            <li>3 tbsp soy sauce</li>
+            <li>1 tbsp mirin</li>
+            <li>1 tsp sesame oil</li>
+            <li>2 eggs</li>
+            <li>2 slices nori (dried seaweed)</li>
+            <li>60 g canned bamboo shoots, drained</li>
+            <li>2 spring onions, thinly sliced</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Soft-boil the eggs for exactly 7 minutes. Transfer to cold water, peel and set aside.</li>
+            <li>Bring stock to a gentle simmer. Add soy sauce, mirin and sesame oil. Taste and adjust seasoning.</li>
+            <li>Cook noodles separately according to packet instructions (usually 3–4 min). Drain and divide into two bowls.</li>
+            <li>Pour the hot broth over the noodles. Halve the eggs and place them on top.</li>
+            <li>Add bamboo shoots, a sheet of nori and sliced spring onion. Serve immediately.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal — Pad Thai -->
+  <div class="modal fade" id="padthaiModal" tabindex="-1" aria-labelledby="padthaiLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="padthaiLabel">Pad Thai</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 15 min &nbsp;|&nbsp; <strong>Cook:</strong> 15 min &nbsp;|&nbsp; <strong>Serves:</strong> 2</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>180 g flat rice noodles (5 mm wide)</li>
+            <li>150 g raw shrimp, peeled and deveined</li>
+            <li>80 g firm tofu, cubed</li>
+            <li>2 eggs</li>
+            <li>2 tbsp tamarind paste</li>
+            <li>2 tbsp fish sauce</li>
+            <li>1 tbsp sugar</li>
+            <li>2 tbsp vegetable oil</li>
+            <li>2 garlic cloves, minced</li>
+            <li>50 g bean sprouts</li>
+            <li>30 g roasted peanuts, roughly crushed</li>
+            <li>1 lime, cut in wedges</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Soak noodles in warm water for 20 minutes until pliable. Drain well.</li>
+            <li>Mix tamarind paste, fish sauce and sugar in a small bowl. Set aside.</li>
+            <li>Heat oil in a wok over high heat. Fry garlic for 30 seconds, then add shrimp and tofu. Cook 2–3 min until shrimp are pink.</li>
+            <li>Push everything to the side. Crack eggs into the wok and scramble until just set, then mix with the rest.</li>
+            <li>Add drained noodles and pour the sauce over. Toss everything together for 2 minutes.</li>
+            <li>Serve with bean sprouts, crushed peanuts and lime wedges on the side.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal — Dumplings -->
+  <div class="modal fade" id="dumplingModal" tabindex="-1" aria-labelledby="dumplingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="dumplingLabel">Pan-Fried Dumplings</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 25 min &nbsp;|&nbsp; <strong>Cook:</strong> 12 min &nbsp;|&nbsp; <strong>Serves:</strong> 2 (16 dumplings)</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>16 round dumpling wrappers (store-bought)</li>
+            <li>200 g ground pork</li>
+            <li>2 tsp fresh ginger, finely grated</li>
+            <li>2 garlic cloves, minced</li>
+            <li>2 tbsp soy sauce</li>
+            <li>1 tsp sesame oil</li>
+            <li>1 tsp rice vinegar</li>
+            <li>2 spring onions, finely chopped</li>
+            <li>2 tbsp vegetable oil for frying</li>
+            <li>80 ml water</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Mix pork, ginger, garlic, soy sauce, sesame oil, vinegar and spring onions until well combined.</li>
+            <li>Place 1 heaped teaspoon of filling in the centre of each wrapper. Wet the edges with water, fold and press firmly to seal.</li>
+            <li>Heat oil in a non-stick pan over medium-high heat. Place dumplings flat-side down. Cook 3 minutes until the bottoms are golden.</li>
+            <li>Pour in the water and immediately cover with a lid. Steam for 6–7 minutes until the water has evaporated.</li>
+            <li>Remove lid and cook 1 more minute to re-crisp the bottoms. Serve with soy sauce and chili oil.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal — Miso Soup -->
+  <div class="modal fade" id="misoModal" tabindex="-1" aria-labelledby="misoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="misoLabel">Miso Soup</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 5 min &nbsp;|&nbsp; <strong>Cook:</strong> 8 min &nbsp;|&nbsp; <strong>Serves:</strong> 2</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>600 ml water</li>
+            <li>1 tsp dashi powder (or 1 dashi sachet)</li>
+            <li>2 tbsp white miso paste (shiro miso)</li>
+            <li>150 g silken tofu, cut into 1 cm cubes</li>
+            <li>1 tbsp dried wakame seaweed</li>
+            <li>2 spring onions, thinly sliced</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Rehydrate the wakame in cold water for 5 minutes. Drain and set aside.</li>
+            <li>Bring water to a simmer and dissolve the dashi powder. Add tofu and wakame. Heat for 2 minutes.</li>
+            <li>Remove from heat. Scoop out a small amount of hot broth, dissolve the miso paste into it, then stir it back into the pot. Do not boil after adding miso — it loses its flavour.</li>
+            <li>Ladle into bowls and top with spring onion. Serve straight away.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal — Bulgogi -->
+  <div class="modal fade" id="bulgogiModal" tabindex="-1" aria-labelledby="bulgogiLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="bulgogiLabel">Korean Bulgogi</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 10 min + 30 min marinating &nbsp;|&nbsp; <strong>Cook:</strong> 8 min &nbsp;|&nbsp; <strong>Serves:</strong> 2</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>300 g beef sirloin or ribeye, sliced as thin as possible (freeze for 30 min first to make slicing easier)</li>
+            <li>3 tbsp soy sauce</li>
+            <li>1 tbsp sesame oil</li>
+            <li>1 tbsp sugar</li>
+            <li>3 tbsp Asian pear or apple, grated (tenderises the meat)</li>
+            <li>3 garlic cloves, minced</li>
+            <li>1 tsp fresh ginger, grated</li>
+            <li>1 tbsp sesame seeds</li>
+            <li>2 spring onions, sliced, to serve</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Mix soy sauce, sesame oil, sugar, grated pear, garlic and ginger in a bowl.</li>
+            <li>Add the beef slices and mix well. Cover and marinate for at least 30 minutes in the fridge (overnight is better).</li>
+            <li>Heat a pan or griddle over very high heat. Cook the beef in a single layer for 2–3 minutes each side. Do not overcrowd the pan — cook in batches if needed.</li>
+            <li>Serve over steamed rice, topped with spring onion and sesame seeds.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal — Pho -->
+  <div class="modal fade" id="phoModal" tabindex="-1" aria-labelledby="phoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="phoLabel">Beef Phở</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep:</strong> 10 min &nbsp;|&nbsp; <strong>Cook:</strong> 35 min &nbsp;|&nbsp; <strong>Serves:</strong> 2</p>
+          <h6>Ingredients</h6>
+          <ul>
+            <li>180 g flat rice noodles (banh pho)</li>
+            <li>150 g beef sirloin, sliced paper-thin</li>
+            <li>900 ml good beef stock</li>
+            <li>2 star anise</li>
+            <li>1 cinnamon stick</li>
+            <li>3 cloves</li>
+            <li>2 tbsp fish sauce</li>
+            <li>1 tsp sugar</li>
+            <li>Fresh bean sprouts, Thai basil, mint, lime and sliced chili to serve</li>
+          </ul>
+          <h6>Steps</h6>
+          <ol>
+            <li>Toast the star anise, cinnamon and cloves in a dry pan for 1 minute until fragrant.</li>
+            <li>Add beef stock, fish sauce and sugar. Simmer for 25 minutes. Strain the broth and discard the spices.</li>
+            <li>Soak noodles in hot water for 15 minutes, or cook according to packet. Drain and divide into bowls.</li>
+            <li>Arrange raw beef slices over the noodles. Pour the boiling hot broth over — the heat will cook the beef in about 1 minute.</li>
+            <li>Serve immediately with bean sprouts, herbs, lime and chili on the side.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section (Bonus) -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <p class="text-muted">Have a recipe suggestion or a question? Send us a message.</p>
+          <!-- W3Forms form — replace YOUR_ACCESS_KEY with your real key from web3forms.com -->
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+            <input type="hidden" name="access_key" value="d6b01f48-d94a-447a-aed0-3f60658e39b1" />
+            <input type="hidden" name="subject" value="New message from Umami Kitchen" />
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Send Message</button>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none">
+              Your message was sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact: <a href="mailto:hello@umamikitchen.com">hello@umamikitchen.com</a></p>
+      <p>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+      </p>
+      <p>&copy; 2025 Umami Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form validation + W3Forms submit -->
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+      const data = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data
+      });
+      if (response.ok) {
+        document.getElementById('formSuccess').classList.remove('d-none');
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    });
+  </script>
+
+</body>
+</html>
